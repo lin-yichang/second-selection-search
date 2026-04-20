@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Second Context Search",
+  "version": "1.0.0",
+  "description": "Adds a second search engine to the context menu.",
+  "homepage_url": "https://github.com/lin-yichang/second-context-search",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "search",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "second-context-search@lin-yichang",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Settings</title>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <p id="message"></p>
+
+    <form>
+        <fieldset>
+            <legend>
+                <label>
+                    <input type="radio" name="searchType" value="installed">
+                    Choose one from the browser's list of search engines
+                </label>
+            </legend>
+
+            <ul id="installedEngineList"></ul>
+
+            <div><small>(This list can be configured in the browser's settings. Don't forget to <button type="button" id="refreshEngineList">refresh</button> when you come back from there.)</small></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <label>
+                    <input type="radio" name="searchType" value="independent">
+                    Directly specify an independent search URL, with "%s" as a placeholder for the search term
+                </label>
+            </legend>
+
+            <div id="urlFieldContainer">
+                <input name="independentUrl" placeholder="e.g., https://example.com/search?q=%s" size="50">
+            </div>
+        </fieldset>
+    </form>
+
+    <div id="saveButtonContainer">
+        <button type="button" id="save" disabled>Save</button>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
