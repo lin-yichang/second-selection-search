@@ -1,4 +1,4 @@
-# Second Context Search Extension
+# Second Selection Search Extension
 
 A Firefox browser extension that adds a second search engine to the context menu.
 
@@ -15,7 +15,7 @@ It is useful, for example, if you want a traditional search engine (e.g., Google
 
 You can install the extension directly from Firefox Add-ons:
 
-https://addons.mozilla.org/addon/second-context-search
+https://addons.mozilla.org/addon/second-selection-search
 
 Whether you enjoy the extension or have suggestions, please consider rating it and leaving a comment there.
 
