@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Second Selection Search",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Adds a second search engine to the context menu.",
   "homepage_url": "https://github.com/lin-yichang/second-selection-search",
   "icons": {
