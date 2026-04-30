@@ -3,7 +3,8 @@
     border-width: 1px;
     border-style: solid;
     border-radius: .5rem;
-    color: light-dark(#004080, #80c0ff);
+    color: light-dark(#365314, #d9f99d);
+    background-color: light-dark(#ecfccb, transparent);
 }
 
 #message:empty {
