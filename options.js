@@ -94,12 +94,17 @@ let installedEngines = [];
 async function init() {
   installedEngines = await browser.search.get();
   updateInstalledEngineList(installedEngines);
-  const settings = await loadSettings();
-  updateForm(settings);
+  let settings = await loadSettings();
   const validation = validateSettings(settings, installedEngines);
   if (!validation.valid) {
     document.querySelector("#message").textContent = validation.message;
   }
+  // It would be extremely confusing and inconvenient if controls were
+  // disabled and the user had to choose a search type first.
+  if (!["installed", "independent"].includes(settings.searchType)) {
+    settings = { ...settings, searchType: "installed" };
+  }
+  updateForm(settings);
   const saveButton = document.querySelector("#save");
   saveButton.addEventListener("click", async () => {
     saveButton.disabled = true;
